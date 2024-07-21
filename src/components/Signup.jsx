@@ -1,9 +1,10 @@
 import React from 'react';
 import Logo2 from '../images/Logo2.png';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   return (
-    <div className="container my-2">
+    <div className="container my-1">
       <div className="row">
         <img
           src={Logo2}
@@ -12,7 +13,7 @@ const Signup = () => {
           style={{ height: '20rem', width: '30rem', marginTop: '5rem' }}
         />
         <form className="col">
-          <div className="text-center my-3">
+          <div className="text-center my-1">
             <h2>Introduce Yourself 👋</h2>
           </div>
           <div className="row g-3">
@@ -62,6 +63,9 @@ const Signup = () => {
               id="exampleInputPassword2"
             />
           </div>
+          <p>
+            Already Registered? <Link to="/login">Login here</Link>
+          </p>
           <button type="submit" className="btn btn-primary">
             Register
           </button>

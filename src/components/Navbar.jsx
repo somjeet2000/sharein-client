@@ -82,9 +82,11 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="d-flex">
-              <button className="btn btn-outline-primary mx-2" type="submit">
-                Login
-              </button>
+              <Link to="/login">
+                <button className="btn btn-outline-primary mx-2" type="submit">
+                  Login
+                </button>
+              </Link>
               <Link to="/signup">
                 <button className="btn btn-success mx-2" type="submit">
                   Sign up
