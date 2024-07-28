@@ -45,7 +45,7 @@ const Navbar = () => {
                   className={`nav-link ${
                     location.pathname === '/dashboard' ? 'active' : ''
                   }`}
-                  to="#"
+                  to="/dashboard"
                 >
                   Dashboard
                 </Link>
@@ -73,11 +73,11 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   className={`nav-link ${
-                    location.pathname === '/profile' ? 'active' : ''
+                    location.pathname === '/about' ? 'active' : ''
                   }`}
                   to="#"
                 >
-                  Profile
+                  About
                 </Link>
               </li>
             </ul>
