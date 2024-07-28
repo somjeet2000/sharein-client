@@ -52,6 +52,7 @@ function AuthenticationState(props) {
     const responseJSON = await response.json();
     console.log(responseJSON);
     if (responseJSON.isValid) {
+      localStorage.setItem('token', responseJSON.authToken);
       showAlert('User Loggedin Successfully', 'success');
       navigate('/dashboard');
     } else {
