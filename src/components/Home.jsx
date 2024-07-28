@@ -1,7 +1,7 @@
 import React from 'react';
 import Friends from '../images/Friends.png';
 import Family from '../images/Family.png';
-import Partner from '../images/Partner.png';
+import Partner from '../images/Partners.png';
 import backgroundImage1 from '../images/backgroundImage1.png';
 import { Link } from 'react-router-dom';
 
@@ -47,7 +47,7 @@ const Home = () => {
                 </Link>
               </div>
               <div className="col">
-                <img src="" className="d-block w-100" alt="..." />
+                <img src={Friends} className="d-block w-100" alt="Friends" />
               </div>
             </div>
           </div>
@@ -75,7 +75,12 @@ const Home = () => {
                 </Link>
               </div>
               <div className="col">
-                <img src="" className="d-block w-100" alt="..." />
+                <img
+                  src={Family}
+                  className="d-block w-100"
+                  alt="Family"
+                  style={{ height: '90vh' }}
+                />
               </div>
             </div>
           </div>
@@ -103,7 +108,7 @@ const Home = () => {
                 </Link>
               </div>
               <div className="col">
-                <img src="" className="d-block w-100" alt="..." />
+                <img src={Partner} className="d-block w-100" alt="Partner" />
               </div>
             </div>
           </div>
